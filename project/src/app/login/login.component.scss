@@ -1,0 +1,25 @@
+h2 {
+    text-align: center;
+}
+  
+
+.forms{
+justify-content: center;
+padding-left: 460px;
+
+    input{
+       display: flex;
+       justify-content: center;
+    }
+}
+
+.inputbtn{
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 13px;
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 20px;;
+    background-color: green;
+}

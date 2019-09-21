@@ -1,0 +1,25 @@
+
+<header>
+    <div class="container">
+      <a href="#" class="logo">Projeto Trabalho</a>
+      <nav>
+        <ul>
+          <li><a href="" routerLink="/">Login</a></li>
+          <li><a href="" routerLink="/list">Campeonato</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+      <div class="navbar-nav">
+          <a class="nav-item nav-link" routerLink="/">Home</a>
+          <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      </div>
+  </nav>
+    <app-login></app-login>
+    <div class="container">
+      
+      <router-outlet></router-outlet>
+    
+    </div>
