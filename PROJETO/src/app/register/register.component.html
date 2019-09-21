@@ -1,0 +1,50 @@
+<div *ngIf="error" class="alert alert-danger">{{error}}</div>
+
+<h2>Register</h2>
+
+<br>
+
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <div class="formdad">
+        <label for="email">Email</label>
+        <input type="email" formControlName="email" class="formkid" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="formdad">
+        <label for="username">Username</label>
+        <input type="text" formControlName="username" class="formkid3" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div *ngIf="f.username.errors.required">Username is required</div>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="formdad">
+        <label for="password">Password</label>
+        <input type="password" formControlName="password" class="formkid3" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+        </div>
+    </div>
+    
+    <br>
+
+    <div class="formdad">
+        <button [disabled]="loading" class="btn">
+            <span *ngIf="loading" class=""></span>
+        Register
+        </button>
+        <a routerLink="/login" class="btn2">Cancel</a>
+    </div>
+</form>
+
+

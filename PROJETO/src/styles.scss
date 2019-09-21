@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+body{
+    background: lightgreen;
+}
+h2{
+    justify-content: center;
+    display: flex;
+    font-family: 'Kanit', 'sans-serif';
+    background: green;
+    color: white;
+}
+
+.formdad{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', 'sans-serif';
+}
+
+.formkid2{
+    margin-right: 36px; 
+}
+
+.formkid3{
+    margin-right: 31px;
+}
+
+.btn{
+    font-family: 'Kanit', 'sans-serif';
+    margin-right: 10px;
+}
+ 
+input{
+    margin-left: 20px;
+    vertical-align: 100%
+}
+
+.inpemail{
+ margin-left: 44px;
+}
